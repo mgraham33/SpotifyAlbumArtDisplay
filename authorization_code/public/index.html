@@ -18,6 +18,8 @@
         </div>
         <!--<button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>-->
         <div id="currentTrack">
+        </div>
+        <div>
           <button class="refresh" id="obtain-image">Refresh</button>
         </div>
       </div>
@@ -54,7 +56,7 @@
     <script id="current-template" type="text/x-handlebars-template">
       <div class="cover">
         <!--FIXME-->
-        <img class="album" width="150" src="{{images.0.url}}" />
+        <img class="album" width="150" src="{{spotify.data.album.images.0.url}}" />
       </div>
     </script>
 
@@ -148,9 +150,6 @@
                 },
                 success: function(response) {
                   currentPlaceholder.innerHTML = currentTemplate(response);
-
-                  $('#login').hide();
-                  $('#loggedin').show();
                 }
             });
           });
