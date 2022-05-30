@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: lightgray;
 }
 
 h1 {
@@ -94,4 +94,22 @@ img {
 
   .sidenav .closebtn:hover {
     color: #f1f1f1;
+  }
+
+  .colorpicker {
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .update {
+    background-color: #818181;
+    padding: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+  }
+  
+  .update:hover {
+    background-color: #f1f1f1;
   }
