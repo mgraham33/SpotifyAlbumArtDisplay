@@ -9,7 +9,7 @@
       <div id="login">
         <h1>Welcome to the Custom Spotify Display</h1>
         <p>Create yourself a custom dashboard to display whatever your are currenlty listening to on Spotify</p>
-        <button onclick="location.href='/login'">Log in with Spotify</button>
+        <button class="login" onclick="location.href='/login'">Log in with Spotify</button>
       </div>
       <div id="loggedin">
         <div id="user-profile">
@@ -57,7 +57,7 @@
       <div class="cover">
         <img class="album" title="{{item.album.name}}" width="25%" height="25%" src="{{item.album.images.0.url}}" />
       </div>
-      <div>
+      <div class="controlsDiv">
         <button class="controls"><</button>
         <button class="controls">||</button>
         <button class="controls">></button>
