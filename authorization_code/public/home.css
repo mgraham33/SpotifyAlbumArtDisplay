@@ -29,3 +29,23 @@ p {
     text-align: center;
     font-style: italic;
 }
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.controls {
+    background-color: lime;
+    width: 3%;
+    padding: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.controls:hover{
+    background-color: rgb(2, 189, 2);
+}
