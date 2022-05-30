@@ -12,6 +12,12 @@
         <button class="login" onclick="location.href='/login'">Log in with Spotify</button>
       </div>
       <div id="loggedin">
+        <span style="font-size:40px; cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a>Background</a>
+          <a>Buttons</a>
+        </div>
         <div id="user-profile">
         </div>
         <div id="oauth">
@@ -230,6 +236,14 @@
       // TODO
       function next() {
         // next song
+      }
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
       }
     </script>
   </body>
