@@ -29,10 +29,10 @@
           <button class="update" onclick="updateControls()">Update</button>        
           <a>Presets</a>
           <label>HIDE</label>  
-          <button class="preset" id="preset1" onclick="updateP1()">Spotify</button>
+          <button class="preset" id="preset1" onclick="updateP1()">Default</button>
           <br>
           <label>HIDE</label> 
-          <button class="preset" id="preset2" onclick="updateP2()">Default</button>
+          <button class="preset" id="preset2" onclick="updateP2()">Spotify</button>
           <br>
           <label>HIDE</label> 
           <button class="preset" id="preset3" onclick="updateP3()">Crimson</button>
@@ -45,6 +45,33 @@
           <br>
           <label>HIDE</label> 
           <button class="preset" id="preset6" onclick="updateP6()">Lovely</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset7" onclick="updateP7()">Colorful</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset8" onclick="updateP8()">Miami</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset9" onclick="updateP9()">Cyber</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset10" onclick="updateP10()">Forest</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset11" onclick="updateP11()">Island</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset12" onclick="updateP12()">Chicago</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset13" onclick="updateP13()">Mountain</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset14" onclick="updateP14()">Shards</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset15" onclick="updateP15()">Ocean</button>
         </div>
         <div id="user-profile">
         </div>
@@ -275,16 +302,6 @@
       }
 
       function updateP1() {
-        document.body.style.background = "rgb(22, 21, 21)";
-        document.getElementById('previous').style.backgroundColor = "rgb(2, 189, 2)";
-        document.getElementById('pause').style.backgroundColor = "rgb(2, 189, 2)";
-        document.getElementById('next').style.backgroundColor = "rgb(2, 189, 2)";
-        document.getElementById('previous').style.color = "black";
-        document.getElementById('pause').style.color = "black";
-        document.getElementById('next').style.color = "black";
-      }
-
-      function updateP2() {
         document.body.style.background = "lightgray";
         document.getElementById('previous').style.backgroundColor = "cornflowerblue";
         document.getElementById('pause').style.backgroundColor = "cornflowerblue";
@@ -294,18 +311,36 @@
         document.getElementById('next').style.color = "black";
       }
 
+      function updateP2() {
+        document.body.style.background = "rgb(22, 21, 21)";
+        document.getElementById('previous').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('pause').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('next').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
       function updateP3() {
-        document.body.style.background = "rgb(114, 4, 4)";
-        document.getElementById('previous').style.backgroundColor = "rgb(85, 85, 85)";
-        document.getElementById('pause').style.backgroundColor = "rgb(85, 85, 85)";
-        document.getElementById('next').style.backgroundColor = "rgb(85, 85, 85)";
+        document.body.style.backgroundImage = "linear-gradient(rgb(114, 4, 4), crimson, rgb(114, 4, 4))";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
         document.getElementById('previous').style.color = "black";
         document.getElementById('pause').style.color = "black";
         document.getElementById('next').style.color = "black";
       }
 
       function updateP4() {
-        document.body.style.background = "white";
+        document.body.style.backgroundImage = "linear-gradient(white, gray, white)";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
         document.getElementById('previous').style.backgroundColor = "black";
         document.getElementById('pause').style.backgroundColor = "black";
         document.getElementById('next').style.backgroundColor = "black";
@@ -315,7 +350,25 @@
       }
 
       function updateP5() {
-        document.body.style.background = "turquoise";
+        document.body.style.backgroundImage = "linear-gradient(turquoise, magenta)";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
+        document.getElementById('previous').style.color = "blue";
+        document.getElementById('pause').style.color = "blue";
+        document.getElementById('next').style.color = "blue";
+      }
+
+      function updateP6() {
+        document.body.style.backgroundImage = "linear-gradient(pink, pink, red)";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
         document.getElementById('previous').style.backgroundColor = "magenta";
         document.getElementById('pause').style.backgroundColor = "magenta";
         document.getElementById('next').style.backgroundColor = "magenta";
@@ -324,14 +377,130 @@
         document.getElementById('next').style.color = "white";
       }
 
-      function updateP6() {
-        document.body.style.background = "pink";
-        document.getElementById('previous').style.backgroundColor = "red";
-        document.getElementById('pause').style.backgroundColor = "red";
-        document.getElementById('next').style.backgroundColor = "red";
+      function updateP7() {
+        document.body.style.backgroundImage = "url('./images/rainbowEQ.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "black";
+        document.getElementById('pause').style.backgroundColor = "black";
+        document.getElementById('next').style.backgroundColor = "black";
         document.getElementById('previous').style.color = "white";
         document.getElementById('pause').style.color = "white";
         document.getElementById('next').style.color = "white";
+      }
+
+      function updateP8() {
+        document.body.style.backgroundImage = "url('./images/miamiVice.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP9() {
+        document.body.style.backgroundImage = "url('./images/neonCity.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP10() {
+        document.body.style.backgroundImage = "url('./images/forestRiver.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "brown";
+        document.getElementById('pause').style.backgroundColor = "brown";
+        document.getElementById('next').style.backgroundColor = "brown";
+        document.getElementById('previous').style.color = "white";
+        document.getElementById('pause').style.color = "white";
+        document.getElementById('next').style.color = "white";
+      }
+
+      function updateP11() {
+        document.body.style.backgroundImage = "url('./images/island.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
+        document.getElementById('previous').style.color = "blue";
+        document.getElementById('pause').style.color = "blue";
+        document.getElementById('next').style.color = "blue";
+      }
+
+      function updateP12() {
+        document.body.style.backgroundImage = "url('./images/chicago.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "lightgray";
+        document.getElementById('pause').style.backgroundColor = "lightgray";
+        document.getElementById('next').style.backgroundColor = "lightgray";
+        document.getElementById('previous').style.color = "navy";
+        document.getElementById('pause').style.color = "navy";
+        document.getElementById('next').style.color = "navy";
+      }
+
+      function updateP13() {
+        document.body.style.backgroundImage = "url('./images/forestLake.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "150%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "navy";
+        document.getElementById('pause').style.backgroundColor = "navy";
+        document.getElementById('next').style.backgroundColor = "navy";
+        document.getElementById('previous').style.color = "white";
+        document.getElementById('pause').style.color = "white";
+        document.getElementById('next').style.color = "white";
+      }
+
+      function updateP14() {
+        document.body.style.backgroundImage = "url('./images/redBlackShards.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "maroon";
+        document.getElementById('pause').style.backgroundColor = "maroon";
+        document.getElementById('next').style.backgroundColor = "maroon";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP15() {
+        document.body.style.backgroundImage = "url('./images/sea.jpg')";;
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "50%";
+        document.body.style.backgroundAttachment = "fixed";
+        document.getElementById('previous').style.backgroundColor = "white";
+        document.getElementById('pause').style.backgroundColor = "white";
+        document.getElementById('next').style.backgroundColor = "white";
+        document.getElementById('previous').style.color = "gray";
+        document.getElementById('pause').style.color = "gray";
+        document.getElementById('next').style.color = "gray";
       }
 
     </script>

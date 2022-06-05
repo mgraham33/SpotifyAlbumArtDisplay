@@ -1,6 +1,5 @@
 body {
     background-color: lightgray;
-    background-image: none;
 }
 
 h1 {
@@ -125,18 +124,18 @@ img {
   }
 
   #preset1 {
-    background-color: rgb(22, 21, 21);
-    color: rgb(2, 189, 2);
-  }
-
-  #preset2 {
     background-color: lightgray;
     color: cornflowerblue;
   }
 
+  #preset2 {
+    background-color: rgb(22, 21, 21);
+    color: rgb(2, 189, 2);
+  }
+
   #preset3 {
     background-color: rgb(114, 4, 4);
-    color: rgb(85, 85, 85);
+    color: black;
   }
 
   #preset4 {
@@ -152,4 +151,49 @@ img {
   #preset6 {
     background-color: pink;
     color: red;
+  }
+
+  #preset7 {
+    background-color: red;
+    color: white;
+  }
+
+  #preset8 {
+    background-color: magenta;
+    color: white;
+  }
+
+  #preset9 {
+    background-color:purple;
+    color: white;
+  }
+
+  #preset10 {
+    background-color: forestgreen;
+    color: black;
+  }
+
+  #preset11 {
+    background-color: aqua;
+    color:orange
+  }
+
+  #preset12 {
+    background-color: navy;
+    color: white;
+  }
+
+  #preset13 {
+    background-color: gray;
+    color: blue;
+  }
+
+  #preset14 {
+    background-color: red;
+    color: black;
+  }
+
+  #preset15 {
+    background-color: blue;
+    color: white;
   }
