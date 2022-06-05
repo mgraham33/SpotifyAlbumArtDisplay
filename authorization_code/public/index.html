@@ -26,7 +26,25 @@
           <a>Controls</a>
           <label>HIDE</label>
           <input type="color" id="controlsPicker" class="colorpicker" value="black">
-          <button class="update" onclick="updateControls()">Update</button>
+          <button class="update" onclick="updateControls()">Update</button>        
+          <a>Presets</a>
+          <label>HIDE</label>  
+          <button class="preset" id="preset1" onclick="updateP1()">Spotify</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset2" onclick="updateP2()">Default</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset3" onclick="updateP3()">Crimson</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset4" onclick="updateP4()">Modern</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset5" onclick="updateP5()">Vibrant</button>
+          <br>
+          <label>HIDE</label> 
+          <button class="preset" id="preset6" onclick="updateP6()">Lovely</button>
         </div>
         <div id="user-profile">
         </div>
@@ -37,6 +55,11 @@
         </div>
         <div>
           <!--<button class="refresh" id="obtain-image">Refresh</button>-->
+        </div>
+        <div class="controlsDiv">
+          <button id="previous" title="Previous" onclick="previous();" class="controls"><<</button>
+          <button id="pause" title="Pause" onclick="pause();" class="controls">||</button>
+          <button id="next" title="Next" onclick="next();" class="controls">>></button>
         </div>
       </div>
     </div>
@@ -73,30 +96,6 @@
       <div class="cover">
         <img class="album" title="{{item.name}} from {{item.album.name}} by {{item.album.artists.0.name}}" width="25%" height="25%" src="{{item.album.images.0.url}}" />
       </div>
-      <div class="controlsDiv">
-        <button id="previous" title="Previous" onclick="previous();" class="controls"><<</button>
-        <button id="pause" title="Pause" onclick="pause();" class="controls">||</button>
-        <button id="next" title="Next" onclick="next();" class="controls">>></button>
-      </div>
-    </script>
-
-    <script>
-      // function pause() {
-      //   // pause or play
-      //   if (document.getElementById('pause').innerHTML == '||') {
-      //         document.getElementById('pause').innerHTML = '>';
-      //       } else {
-      //         document.getElementById('pause').textContent = '||';
-      //       }
-      // }
-
-      // function previous() {
-      //   // previous song
-      // }
-
-      // function next() {
-      //   // next song
-      // }
     </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
@@ -273,6 +272,66 @@
         document.getElementById('previous').style.color = document.getElementById('controlsPicker').value;
         document.getElementById('pause').style.color = document.getElementById('controlsPicker').value;
         document.getElementById('next').style.color = document.getElementById('controlsPicker').value;
+      }
+
+      function updateP1() {
+        document.body.style.background = "rgb(22, 21, 21)";
+        document.getElementById('previous').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('pause').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('next').style.backgroundColor = "rgb(2, 189, 2)";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP2() {
+        document.body.style.background = "lightgray";
+        document.getElementById('previous').style.backgroundColor = "cornflowerblue";
+        document.getElementById('pause').style.backgroundColor = "cornflowerblue";
+        document.getElementById('next').style.backgroundColor = "cornflowerblue";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP3() {
+        document.body.style.background = "rgb(114, 4, 4)";
+        document.getElementById('previous').style.backgroundColor = "rgb(85, 85, 85)";
+        document.getElementById('pause').style.backgroundColor = "rgb(85, 85, 85)";
+        document.getElementById('next').style.backgroundColor = "rgb(85, 85, 85)";
+        document.getElementById('previous').style.color = "black";
+        document.getElementById('pause').style.color = "black";
+        document.getElementById('next').style.color = "black";
+      }
+
+      function updateP4() {
+        document.body.style.background = "white";
+        document.getElementById('previous').style.backgroundColor = "black";
+        document.getElementById('pause').style.backgroundColor = "black";
+        document.getElementById('next').style.backgroundColor = "black";
+        document.getElementById('previous').style.color = "white";
+        document.getElementById('pause').style.color = "white";
+        document.getElementById('next').style.color = "white";
+      }
+
+      function updateP5() {
+        document.body.style.background = "turquoise";
+        document.getElementById('previous').style.backgroundColor = "magenta";
+        document.getElementById('pause').style.backgroundColor = "magenta";
+        document.getElementById('next').style.backgroundColor = "magenta";
+        document.getElementById('previous').style.color = "white";
+        document.getElementById('pause').style.color = "white";
+        document.getElementById('next').style.color = "white";
+      }
+
+      function updateP6() {
+        document.body.style.background = "pink";
+        document.getElementById('previous').style.backgroundColor = "red";
+        document.getElementById('pause').style.backgroundColor = "red";
+        document.getElementById('next').style.backgroundColor = "red";
+        document.getElementById('previous').style.color = "white";
+        document.getElementById('pause').style.color = "white";
+        document.getElementById('next').style.color = "white";
       }
 
     </script>

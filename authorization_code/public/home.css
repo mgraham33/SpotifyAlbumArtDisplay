@@ -113,3 +113,42 @@ img {
   .update:hover {
     background-color: #f1f1f1;
   }
+
+  .preset {
+    padding: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+    width: 45%;
+  }
+
+  #preset1 {
+    background-color: rgb(22, 21, 21);
+    color: rgb(2, 189, 2);
+  }
+
+  #preset2 {
+    background-color: lightgray;
+    color: cornflowerblue;
+  }
+
+  #preset3 {
+    background-color: rgb(114, 4, 4);
+    color: rgb(85, 85, 85);
+  }
+
+  #preset4 {
+    background-color: white;
+    color: black;
+  }
+
+  #preset5 {
+    background-color: turquoise;
+    color: magenta;
+  }
+
+  #preset6 {
+    background-color: pink;
+    color: red;
+  }
